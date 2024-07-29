@@ -1,0 +1,49 @@
+/* AboutUsPage.css */
+.about-us-page {
+  background-image: url('https://img.freepik.com/free-photo/green-sofa-white-living-room-with-free-space_43614-834.jpg?size=626&ext=jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333; /* Dark text color for better readability */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: cover;
+  margin: 0 auto;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.about-us-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-us-page h2 {
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.about-us-page p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  
+}
+
+.about-us-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-us-page li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.about-us-page a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+.about-us-page a:hover {
+  text-decoration: underline;
+}

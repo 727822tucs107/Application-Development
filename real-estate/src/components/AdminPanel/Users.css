@@ -1,0 +1,26 @@
+.users-page {
+    padding: 20px;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .users-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .users-table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  

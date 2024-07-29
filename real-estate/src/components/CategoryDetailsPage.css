@@ -1,0 +1,54 @@
+.category-details-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #f2d3e9;
+  min-height: 100vh; /* Ensure the background covers the full page */
+}
+
+.details-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 250px; 
+  height: 250px;/* Fixed width for each card */
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-image {
+  width: 200px; /* Fixed width for images */
+  height: 100px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 10px 10px 0 0;
+}
+
+.details-info {
+  padding: 10px;
+}
+
+.wishlist-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

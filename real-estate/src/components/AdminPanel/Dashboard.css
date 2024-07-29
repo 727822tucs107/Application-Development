@@ -1,0 +1,22 @@
+.dashboard {
+    padding: 5px;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    background-color: #e1eefa;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .chart-container {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  

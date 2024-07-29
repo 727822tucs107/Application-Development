@@ -1,0 +1,55 @@
+.home-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(1, 1, 1);
+  text-align: center;
+  font-family: 'Black Chancery', Antishbusy; /* Apply the new font */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: background-image 1s ease-in-out; /* Smooth transition between images */
+}
+
+.home-page h1 {
+  font-size: 4em; /* Adjust the font size for the heading */
+  margin-bottom: 0.5em; /* Space between the heading and the paragraph */
+}
+
+.home-page p {
+  font-size: 1.5em; /* Adjust the font size for the paragraph */
+  margin-bottom: 1em; /* Space between the paragraph and the search bar */
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333; /* Button background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #555; /* Button hover color */
+}

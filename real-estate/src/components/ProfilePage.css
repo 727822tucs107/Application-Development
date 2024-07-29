@@ -1,0 +1,68 @@
+.profile-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://img.freepik.com/premium-photo/minimal-living-room-empty-black-wall-texture-background-interior-design-3d-rendering_221619-1959.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%; /* Adjust width as needed */
+  max-width: 1200px; /* Maximum width for larger screens */
+  background-color: rgba(230, 230, 230, 0.9); /* Semi-transparent background for the profile container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 10px; /* Padding around the container */
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding-bottom: 20px; /* Space between image and info */
+}
+
+.profile-image img {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover; /* Cover the image */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info h1 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.profile-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Space between the two columns */
+}
+
+.profile-column {
+  flex: 1; /* Take up equal space */
+  margin: 0 10px; /* Margin between columns */
+}
+
+.profile-field {
+  margin-bottom: 10px; /* Space between fields */
+}
+
+.profile-field label {
+  font-weight: bold; /* Bold labels */
+  display: block; /* Display labels on their own line */
+}
+
+.profile-field p {
+  margin: 0; /* Remove default margin */
+}
