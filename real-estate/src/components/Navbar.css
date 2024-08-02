@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #ffffff; /* White background color for the navbar */
+  background-color: #f3e9e9; /* White background color for the navbar */
   padding: 10px 20px;
   justify-content: space-between; /* Space between logo, links, and profile picture */
 }
@@ -20,12 +20,16 @@
 
 .navbar li {
   margin: 0 15px; /* Space between navigation items */
+  display: flex;
+  align-items: center; /* Center items vertically */
 }
 
 .navbar a {
-  color: #333333; /* Text color for the links */
+  color: #100f0f; /* Text color for the links */
   text-decoration: none;
   font-size: 16px;
+  display: flex;
+  align-items: center; /* Center items vertically */
 }
 
 .navbar a.active {
@@ -36,19 +40,13 @@
   text-decoration: underline; /* Underline on hover */
 }
 
-.profile {
-  display: flex;
-  align-items: center;
+.nav-icon {
+  height: 20px; /* Adjust icon size */
+  width: 20px;
+  margin-right: 8px; /* Space between icon and text */
 }
 
-.profile-picture {
-  height: 50px; /* Height of the profile picture */
-  width: 50px; /* Width of the profile picture */
-  border-radius: 50%; /* Make the profile picture circular */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-left: auto; /* Push profile picture to the right */
-}
-
-.profile-picture:hover {
-  opacity: 0.8; /* Slightly fade profile picture on hover */
+.profile-icon {
+  height: 24px; /* Adjust profile icon size */
+  width: 24px;
 }

@@ -66,6 +66,7 @@ const categoryDetails = {
   // Add more categories as needed
 };
 
+
 function CategoryDetailsPage() {
   const { categoryId } = useParams();
   const navigate = useNavigate();
@@ -76,8 +77,17 @@ function CategoryDetailsPage() {
   };
 
   const handleAddToWishlist = (item) => {
-    // Implement the logic to add the item to the wishlist
-    console.log(`Added ${item.id} to wishlist`);
+    // Retrieve existing wishlist from local storage or create a new one
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    
+    // Add item to wishlist if not already present
+    if (!wishlist.find(wishlistItem => wishlistItem.id === item.id)) {
+      wishlist.push(item);
+      localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    }
+
+    // Navigate to wishlist page
+    navigate('/wishlist');
   };
 
   return (

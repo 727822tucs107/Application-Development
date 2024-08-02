@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 80vh; /* Full viewport height */
-  background-image: url('https://www.ljhooker.com.au/hubfs/Residential/Blog/A%20Guide%20to%20Preparing%20Your%20Home%20For%20a%20Spring%20Sale.jpg'); 
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://www.ljhooker.com.au/hubfs/Residential/Blog/A%20Guide%20to%20Preparing%20Your%20Home%20For%20a%20Spring%20Sale.jpg');
   background-size: cover; /* Cover the entire viewport */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* No repeat */

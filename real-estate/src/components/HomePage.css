@@ -1,28 +1,27 @@
 .home-page {
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgb(1, 1, 1);
   text-align: center;
-  font-family: 'Black Chancery', Antishbusy; /* Apply the new font */
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
   transition: background-image 1s ease-in-out; /* Smooth transition between images */
 }
 
-.home-page h1 {
+.hero-section h1 {
   font-size: 4em; /* Adjust the font size for the heading */
   margin-bottom: 0.5em; /* Space between the heading and the paragraph */
 }
 
-.home-page p {
+.hero-section p {
   font-size: 1.5em; /* Adjust the font size for the paragraph */
   margin-bottom: 1em; /* Space between the paragraph and the search bar */
 }
@@ -51,5 +50,90 @@
 }
 
 .search-bar button:hover {
-  background-color: #555; /* Button hover color */
+  background-color: #4d4b4b; /* Button hover color */
+}
+
+.info-section {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section:nth-child(odd) {
+  background-color: #eaeaea;
+}
+
+.info-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Keyframes for shape animation */
+@keyframes shapeAnimation {
+  0% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+}
+
+/* Apply animation to service image */
+.service-image {
+  width: 20%;
+  height: auto;
+  margin-right: 20px;
+  animation: shapeAnimation 5s infinite; /* Apply shape animation */
+}
+
+.services-description {
+  width: 40%;
+}
+
+/* Apply animation to featured image */
+.featured-image {
+  width: 20%;
+  height: auto;
+  margin-left: 20px;
+  animation: shapeAnimation 5s infinite; /* Apply shape animation */
+}
+
+.featured-description {
+  width: 40%;
+}
+
+/* Apply animation to about us image */
+.about-us-image {
+  width: 20%;
+  height: auto;
+  margin-right: 20px;
+  animation: shapeAnimation 5s infinite; /* Apply shape animation */
+}
+
+.about-us-description {
+  width: 40%;
+}
+
+/* Apply animation to contact us image */
+.contact-us-image {
+  width: 20%;
+  height: auto;
+  margin-left: 20px;
+  animation: shapeAnimation 5s infinite; /* Apply shape animation */
+}
+
+.contact-us-description {
+  width: 40%;
 }

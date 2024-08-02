@@ -21,12 +21,58 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="home-page" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
-      <h1>Welcome to Real Estate Management</h1>
-      <p>Your one-stop solution for managing real estate properties.</p>
-      <div className="search-bar">
-        <input type="text" placeholder="Search properties..." />
-        <button type="button">Search</button>
+    <div className="home-page">
+      <div className="hero-section" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+        <h1>Welcome to Real Estate Management</h1>
+        <p>Your one-stop solution for managing real estate properties.</p>
+        <div className="search-bar">
+          <input type="text" placeholder="Search properties..." />
+          <button type="button">Search</button>
+        </div>
+      </div>
+      <div className="info-section services-section">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUvLgbsDnHW7WH7POUCLSRP-V9QBXag2YNw&s" 
+          alt="Our Service"
+          className="service-image"
+        />
+        <div className="services-description">
+          <h2>Our Services</h2>
+          <p>We provide a wide range of services to help you manage your real estate needs. From buying and selling properties to renting and leasing, we've got you covered.</p>
+        </div>
+      </div>
+      <div className="info-section featured-listings-section">
+        <div className="featured-description">
+          <h2>Featured Listings</h2>
+          <p>Explore our featured listings to find your dream home. Our listings include a variety of properties that suit different tastes and budgets.</p>
+        </div>
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJH59WQ0J7lrI2Qzs3iz0mFnU1yT_IXbDFog&s" 
+          alt="Featured Listings"
+          className="featured-image"
+        />
+      </div>
+      <div className="info-section about-us-section">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDbifSyVnX8E2ZSiCmC09bDH1xorr2RTdow&s" 
+          alt="About Us"
+          className="about-us-image"
+        />
+        <div className="about-us-description">
+          <h2>About Us</h2>
+          <p>Learn more about our company, our mission, and our values. We are dedicated to providing exceptional real estate services and helping our clients find their dream properties.</p>
+        </div>
+      </div>
+      <div className="info-section contact-us-section">
+        <div className="contact-us-description">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or need assistance, feel free to reach out to us. We are here to help you with all your real estate needs.</p>
+        </div>
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR374DqSk9OaxMk0QwVZdjDqInX3RT-qM0Pqw&s" 
+          alt="Contact Us"
+          className="contact-us-image"
+        />
       </div>
     </div>
   );
