@@ -1,0 +1,69 @@
+/* Style for the entire login page */
+.login-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://www.ljhooker.com.au/hubfs/Residential/Blog/A%20Guide%20to%20Preparing%20Your%20Home%20For%20a%20Spring%20Sale.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No repeat */
+}
+
+/* Style for the form container */
+.form-container {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 2rem; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  width: 300px; /* Fixed width for the form */
+  text-align: center; /* Center text inside the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Style for the form elements */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Style for labels */
+label {
+  margin-bottom: 1rem; /* Space between label and input */
+  color: #333; /* Dark color for labels */
+}
+
+/* Style for input fields */
+input {
+  width: 100%; /* Full width of the container */
+  padding: 0.5rem; /* Padding inside the input field */
+  margin-top: 0.5rem; /* Space between label and input */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #1e3a8a; /* Dark ink blue border color */
+}
+
+/* Style for buttons */
+button {
+  padding: 0.5rem; /* Padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #1e3a8a; /* Dark ink blue button color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #1e40af; /* Slightly darker ink blue on hover */
+}
+
+/* Style for links */
+a {
+  color: #1e40af; /* Dark ink blue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
