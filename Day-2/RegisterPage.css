@@ -1,0 +1,24 @@
+/* src/components/Wishlist.css */
+.wishlist {
+  margin-top: 20px;
+}
+
+.wishlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wishlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wishlist button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
