@@ -1,0 +1,42 @@
+/* EditUsers.css */
+.edit-users-container {
+    padding: 100px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .edit-users-form {
+    display: fixed;
+    flex-direction: column;
+    align-items: left; /* Center form elements horizontally */
+  }
+  
+  .edit-users-form label {
+    margin-bottom: 4px;
+  }
+  
+  .edit-users-form input[type="text"],
+  .edit-users-form input[type="email"] {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  .edit-users-form button {
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .edit-users-form button:hover {
+    background-color: #555;
+  }
+  
