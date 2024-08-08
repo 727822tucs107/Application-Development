@@ -1,0 +1,41 @@
+/* DeleteUsers.css */
+.delete-users-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .delete-users-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements horizontally */
+  }
+  
+  .delete-users-form label {
+    margin-bottom: 10px;
+  }
+  
+  .delete-users-form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .delete-users-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-users-form button:hover {
+    background-color: #555;
+  }
+  
