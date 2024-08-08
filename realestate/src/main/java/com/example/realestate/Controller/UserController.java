@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,11 +19,12 @@ import com.example.realestate.service.UserService;
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
+
     @Autowired
     private UserService userService;
 
-@GetMapping("/welcome")
-    public String welcome(){
+    @GetMapping("/welcome")
+    public String welcome() {
         return "Welcome to our page";
     }
 
@@ -31,26 +33,22 @@ public class UserController {
         return userService.saveUser(user);
     }
 
-    // @PostMapping("/login")
-    // public String loginUser(@RequestBody User user) {
-    //     User existingUser = userService.findByEmail(user.getEmail());
-    //     if (existingUser != null && existingUser.getPassword().equals(user.getPassword())) {
-    //         return "Login successful!";
-    //     }
-    //     return "Invalid email or password.";
-    // }
-
+    
     @GetMapping(value = "")
+    @PreAuthorize("hasRole('ADMIN')")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
 
+   
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('USER')")
     public Optional<User> getUserById(@PathVariable Long id) {
-        return userService.getUserById(id);
+        return Optional.empty();
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public String deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
         return "User deleted successfully!";

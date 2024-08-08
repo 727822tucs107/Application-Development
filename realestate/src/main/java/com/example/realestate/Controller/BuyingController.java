@@ -39,7 +39,7 @@ public class BuyingController {
 
     @GetMapping("/{id}")
     public Optional<User> getUserById(@PathVariable Long id) {
-        return userService.getUserById(id);
+        return Optional.empty();
     }
 
     @DeleteMapping("/{id}")

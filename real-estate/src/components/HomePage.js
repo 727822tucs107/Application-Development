@@ -34,7 +34,7 @@ function HomePage() {
         <img 
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUvLgbsDnHW7WH7POUCLSRP-V9QBXag2YNw&s" 
           alt="Our Service"
-          className="service-image"
+          className="service-image bounce"
         />
         <div className="services-description">
           <h2>Our Services</h2>
@@ -49,14 +49,14 @@ function HomePage() {
         <img 
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJH59WQ0J7lrI2Qzs3iz0mFnU1yT_IXbDFog&s" 
           alt="Featured Listings"
-          className="featured-image"
+          className="featured-image bounce"
         />
       </div>
       <div className="info-section about-us-section">
         <img 
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDbifSyVnX8E2ZSiCmC09bDH1xorr2RTdow&s" 
           alt="About Us"
-          className="about-us-image"
+          className="about-us-image bounce"
         />
         <div className="about-us-description">
           <h2>About Us</h2>
@@ -71,7 +71,7 @@ function HomePage() {
         <img 
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR374DqSk9OaxMk0QwVZdjDqInX3RT-qM0Pqw&s" 
           alt="Contact Us"
-          className="contact-us-image"
+          className="contact-us-image bounce"
         />
       </div>
     </div>

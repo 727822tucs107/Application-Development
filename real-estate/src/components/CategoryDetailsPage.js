@@ -63,9 +63,8 @@ const categoryDetails = {
     { id: 9, image: 'https://tse4.mm.bing.net/th?id=OIP.B3S0_Yrv5iqXLlgGi7LjEQHaE6&pid=Api&P=0&h=180', price: '$700,000', squareFeet: '6,000 sqft' },
     { id: 10, image: 'https://tse2.mm.bing.net/th?id=OIP.PIq-mT1OS6H5s71kCv30xwAAAA&pid=Api&P=0&h=180', price: '$750,000', squareFeet: '6,500 sqft' },
   ],
-  // Add more categories as needed
+  
 };
-
 
 function CategoryDetailsPage() {
   const { categoryId } = useParams();
@@ -77,17 +76,18 @@ function CategoryDetailsPage() {
   };
 
   const handleAddToWishlist = (item) => {
-    // Retrieve existing wishlist from local storage or create a new one
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-    
-    // Add item to wishlist if not already present
     if (!wishlist.find(wishlistItem => wishlistItem.id === item.id)) {
       wishlist.push(item);
       localStorage.setItem('wishlist', JSON.stringify(wishlist));
     }
-
-    // Navigate to wishlist page
     navigate('/wishlist');
+  };
+
+  const handlePayment = (item) => {
+    // Implement payment logic here
+    alert(`Proceeding to payment for ${item.price}`);
+    // Navigate to payment page or show payment modal
   };
 
   return (
@@ -102,12 +102,18 @@ function CategoryDetailsPage() {
             <button className="wishlist-button" onClick={() => handleAddToWishlist(item)}>
               Add to Wishlist ❤️
             </button>
+            <div>
+            <button className="payment-button" onClick={() => handlePayment(item)}>
+              Payment 💳
+            </button>
+            </div>
           </div>
         ))}
       </div>
       <button className="back-button" onClick={handleBackClick}>Back</button>
     </div>
   );
+
 }
 
 export default CategoryDetailsPage;

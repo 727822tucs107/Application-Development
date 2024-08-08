@@ -99,7 +99,7 @@
 }
 
 .services-description {
-  width: 40%;
+  width: 50%;
 }
 
 /* Apply animation to featured image */
@@ -111,7 +111,7 @@
 }
 
 .featured-description {
-  width: 40%;
+  width: 50%;
 }
 
 /* Apply animation to about us image */
@@ -123,7 +123,7 @@
 }
 
 .about-us-description {
-  width: 40%;
+  width: 50%;
 }
 
 /* Apply animation to contact us image */
@@ -135,5 +135,5 @@
 }
 
 .contact-us-description {
-  width: 40%;
+  width: 50%;
 }

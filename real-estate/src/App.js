@@ -1,3 +1,5 @@
+// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -14,7 +16,8 @@ import CategoryDetailsPage from './components/CategoryDetailsPage';
 import ForgotPasswordPage from './components/ForgotPasswordPage';
 import UserPanel from './components/UserPanel/UserPanel';
 import WishlistPage from './components/WishlistPage';
-import { WishlistProvider } from './context/WishlistContext'; // Import WishlistProvider
+import PaymentPage from './components/PaymentPage';
+import WishlistProvider from './context/WishlistContext';
 import './App.css';
 
 function App() {
@@ -37,6 +40,7 @@ function App() {
               <Route path="/user-panel/*" element={<UserPanel />} />
               <Route path="/forgot-password" element={<ForgotPasswordPage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
+              <Route path="/payment" element={<PaymentPage />} />
             </Routes>
           </main>
           <Footer />

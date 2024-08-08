@@ -1,0 +1,47 @@
+/* src/components/PaymentPage.css */
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payment-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .payment-button:hover {
+    background-color: #0056b3;
+  }
+  

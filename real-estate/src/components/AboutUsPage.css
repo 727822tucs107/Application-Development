@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #333; /* Dark text color for better readability */
+  color: #dad7d7; /* Dark text color for better readability */
   padding: 20px;
   border-radius: 10px;
   max-width: cover;
@@ -40,7 +40,7 @@
 }
 
 .about-us-page a {
-  color: #007bff; /* Blue color for links */
+  color: #da4848; /* Blue color for links */
   text-decoration: none;
 }
 
